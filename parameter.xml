@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameter">
+
+	<parameter name="username" value="test123UAT"></parameter>
+	<parameter name="password" value="Password1$"></parameter>
+	<parameter name="url" value="cheapoair"></parameter>
+	<parameter name="fromCity" value="Salt Lake"></parameter>
+	<parameter name="toCity" value="San Fransisco"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+
+	<test name="Demo">
+		<classes>
+			<class name="parameter_demo.TestngParameters1" />
+		</classes>
+	</test>
+</suite>

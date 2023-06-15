@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+
+	<test name="Banking app">
+		<classes>
+			<class name="demo_testng.OnlineMarket" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Credit app">
+		<groups>
+			<run>
+				<include name="Smoke" />
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="demo_testng.DemoTestNG" />
+			<class name="demo_testng.BankingAppTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
